@@ -6,8 +6,40 @@
     <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-      /* Doe hier jouw ding! */
-    </style>
+          body {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap:  10px ;
+          }     
+          
+          header {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 9;
+          }
+
+          nav {
+            grid-row-start: 1;
+            grid-row-end: 14;
+            grid-column-start: 9;
+            grid-column-end: 12;
+          }
+
+          main {
+            grid-row-start: 3;
+            grid-row-end: 14;
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+
+          footer {
+            grid-row-start: 3;
+            grid-row-end: 14;
+            grid-column-start: 2;
+            grid-column-end: 9;
+          }    </style>
   </head>
   <body id="basic-layout-6">
     <header><h1>Basic Layout 6</h1></header>
